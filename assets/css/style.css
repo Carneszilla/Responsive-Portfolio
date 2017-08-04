@@ -75,13 +75,14 @@ h1 .logo {
   from {
     width:0%;
     border-bottom: solid teal 1px;
-    
+    color:white;
   }
     
   to {
     width: 100%;
     border-bottom: dotted gray 10px;
     margin-bottom: 10px;
+    color:white;
   }
 }
 
@@ -94,9 +95,7 @@ h1 .logo {
 @keyframes myImg {
   from {
     width:25%;
-    border: 2px solid gray;
-
-    
+    border: 2px solid gray;  
   }
     
   to {
