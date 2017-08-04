@@ -14,9 +14,10 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 80%;
   margin: 0 auto;
   clear: both;
+
 }
 
 h1,
@@ -65,7 +66,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 350px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -114,7 +115,7 @@ footer {
 .sidebar {
   float: right;
   width: 100%;
-  max-width: 270px;
+  max-width: 30%;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -149,7 +150,7 @@ h3,
 .main-section {
   float: left;
   width: 100%;
-  max-width: 650px;
+  max-width: 65%;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -240,34 +241,32 @@ input[type=submit] {
 
 
 
-/* START !--MEDIA thingy 980px-->*/
+/* START !--MEDIA query 980px-->*/
 @media screen and (max-width: 980px)
 {
-  body {
+  body{
  background-color: teal;
   }
 
-.wrapper{
-  width: 100%;
-  margin: 40px auto;
-}
-
 #main-container, #sidebar{
 width: 100%;
-padding: 20px;
 }
 
-#sidebar {
-  display: inline-block;
-  top: auto;
+  
+ .main-section{
+   max-width: 60%;
+  }
+
+#sidebar{
+  max-width: 30%;
 }
 
 
 
-} /* END !--main thingy 980px-->*/
+} /* END !--media query 980px-->*/
 
 
-/*!--START main thingy 768px-->*/
+/*!--START media query 768px-->*/
 
 @media screen and (max-width: 768px)
 {
@@ -275,15 +274,27 @@ padding: 20px;
  background-color: red;
   }
 
-.wrapper{
-  width: 100%;
+.main-section {
+max-width: 100%;
+}
+
+.sidebar {
+  max-width: 100%;
+  text-align: center;
+}
+
+#contect {
+  padding: 0px;
 }
 
 } 
 
-/*!--END main thingy 768px-->*/
+/*!--END media query 768px-->*/
 
-/*!--START main thingy 640-->*/
+
+
+
+/*!--START media query 640px-->*/
 
 @media screen and (max-width: 640px)
 {
@@ -292,10 +303,42 @@ padding: 20px;
  display: block;
   }
 
-.wrapper{
-  width: 100%;
-  display: inline-block;
+nav{
+width: 100%
+max-width: 80%
+margin-top: 15px;
+margin-bottom: 15px;
+text-align: center;
+font-size: 28px;
 }
 
+header {
+position: static; /*via instructions*/
+}
 
-} /*!--END main thingy 640-->*/
+img {
+  width: 100%
+}
+ /*!--END media query 640-->*/
+
+
+
+
+
+
+/*bonus try
+
+@keyframes h1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* The element to apply the animation to 
+h1. h2, h3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: dance;
+    animation-duration: 4s;
+}
+*/
