@@ -10,6 +10,66 @@ body {
   box-sizing: border-box;
 }
 
+h1 .logo {
+  width: 100px;
+  height: 100px;
+  
+}
+
+
+
+
+@keyframes sexy {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: teal;
+  }
+}
+
+.sexy {
+  animation: sexy 8s forwards;
+}
+
+/*2nd attempt at keyframes*/
+@keyframes thisToo {
+  from {
+    background-color: teal;
+  }
+  to {
+    background-color: gray;
+  }
+}
+
+.thisToo {
+  animation: thisToo 5s forwards;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+
+@keyframes myFrame {
+  from {
+    width:0%;
+    border-bottom: solid teal 10px;
+    margin-bottom: 10px;
+  }
+    
+  to {
+    width: 100%;
+    border-bottom: dotted gray 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.myFrame{
+  animation: myFrame 5s ease-in-out 0s forwards;
+}
+
+
+
 /* general */
 
 .container {
@@ -18,10 +78,6 @@ body {
   margin: 0 auto;
   clear: both;
 
-}
-
-img {
-  padding: 20px;
 }
 
 h1,
@@ -35,13 +91,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
-}
+
 
 h1 {
   padding-bottom: 20px;
@@ -57,10 +107,6 @@ h3 {
 
 /* header */
 
-.socialMediaLogo{
-  width: 50%;
-  height: 50%;
-} 
 
 #masthead {
   position: fixed;
@@ -143,6 +189,8 @@ h3,
   
   margin-top: 8px;
   margin-right: 5px;
+  height: 50px;
+  width: 50px;
 }
 
 .social:last-child {
@@ -340,22 +388,4 @@ img {
 
 /*The element to apply the animation to */
 
-h1, h2, h3 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
-.sexy {
-  animation: sexy 4s;
-}
-
-@keyframes sexy {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
-}
 
