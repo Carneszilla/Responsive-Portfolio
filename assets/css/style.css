@@ -20,6 +20,10 @@ body {
 
 }
 
+img {
+  padding: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +56,11 @@ h3 {
 }
 
 /* header */
+
+.socialMediaLogo{
+  width: 50%;
+  height: 50%;
+} 
 
 #masthead {
   position: fixed;
@@ -131,8 +140,7 @@ h3,
 }
 
 .social {
-  width: 62px;
-  height: 62px;
+  
   margin-top: 8px;
   margin-right: 5px;
 }
@@ -246,6 +254,7 @@ input[type=submit] {
 {
   body{
  background-color: teal;
+ 
   }
 
 #main-container, #sidebar{
@@ -262,6 +271,8 @@ width: 100%;
 }
 
 
+ 
+
 
 } /* END !--media query 980px-->*/
 
@@ -272,6 +283,7 @@ width: 100%;
 {
   body {
  background-color: red;
+
   }
 
 .main-section {
@@ -299,8 +311,7 @@ max-width: 100%;
 @media screen and (max-width: 640px)
 {
   body {
- background-color: pink;
- display: block;
+ background-color: orange;
   }
 
 nav{
@@ -326,19 +337,25 @@ img {
 
 
 
-/*bonus try
 
-@keyframes h1 {
-    from {background-color: red;}
-    to {background-color: yellow;}
+/*The element to apply the animation to */
+
+h1, h2, h3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
-/* The element to apply the animation to 
-h1. h2, h3 {
-    width: 100px;
-    height: 100px;
+.sexy {
+  animation: sexy 4s;
+}
+
+@keyframes sexy {
+  from {
     background-color: red;
-    animation-name: dance;
-    animation-duration: 4s;
+  }
+  to {
+    background-color: yellow;
+  }
 }
-*/
+
